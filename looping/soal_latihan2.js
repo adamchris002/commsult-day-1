@@ -32,5 +32,29 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(array.length - 1)
-console.log(temp_array)
+// console.log(array.length - 1)
+// console.log(temp_array)
+
+//soal latihan 2
+
+arr1 = [1,2,3,7,6]
+arr2 = [3,2,1,6,5]
+
+var tim_a = 0;
+var tim_b = 0;
+
+for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] > arr2[i]) {
+        tim_a += 1
+    }
+    else if (arr1[i] < arr2[i]) {
+        tim_b += 1
+    }
+    else {
+        tim_a += 0;
+        tim_b += 0;
+    }
+}
+
+var arr3 = [tim_a, tim_b]
+console.log(arr3)
