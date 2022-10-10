@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p>This is a text</p>
+    <input id="number" value=0>
+
+    <span>
+        <button onclick="add()">Add</button>
+        <button onclick="substract()">substract</button>
+    </span>
+
+    <script>
+        function add() {
+            const add_result = document.getElementById("number").value;
+            document.getElementById("number").value = parseInt(add_result) + 1
+        }
+
+        function substract() {
+            const substract_result = document.getElementById("number").value;
+            document.getElementById("number").value = parseInt(substract_result) - 1
+        }
+
+    </script>
+
+    <div class="box"></div>
+
+    <style>
+        .box {
+            margin-top: 50px;
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+        }
+        .box:hover {
+            background-color: red;
+        }
+    </style>
+  </body>
+</html>

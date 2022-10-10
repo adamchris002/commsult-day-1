@@ -24,7 +24,7 @@ var plus = color.join("+")
 // console.log(comma)
 // console.log(plus)
 
-//latihan lagi
+//FILTER
 
 var list = [2,5,9,6,5]
 const result = list.filter(checkList)
@@ -33,4 +33,21 @@ function checkList(list) {
     return list !== 5;
 }
 
-console.log(result);
+// console.log(result);
+
+
+//FIND
+
+var Data = [
+    {name: "Avenger", time: 10},
+    {name: "Shang-Chi", time: 3},
+    {name: "James Bond", time: 18}
+]
+
+var input = 3;
+
+function checkTime(Data) {
+    return Data.time === input
+}
+const result1 = Data.find(checkTime)
+console.log(result1.name + ", " + result1.time + " o'clock")
